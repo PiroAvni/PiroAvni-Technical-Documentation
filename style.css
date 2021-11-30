@@ -1,0 +1,137 @@
+* {
+	box-sizing: border-box;
+}
+
+body, #container {
+	padding: 0;
+	margin: 0;
+	font-family: 'Pontano Sans', sans-serif;
+	position: relative;
+
+}
+
+#container {
+	display: flex;
+	padding-bottom: 60px;
+}
+
+#main-doc {
+	order: 2;
+	flex: 2 2 1200px;
+	margin-left: 250px; 
+  width: auto;
+}
+
+
+.JS_LOGO{
+  max-width: 50px;
+  display: block;
+  margin: auto;
+}
+h1{
+  text-align: center;
+}
+
+
+#main-doc {
+	padding: 5px 30px;
+}
+
+h2 {
+	font-weight: 600;
+}
+
+.details {
+	padding: 0 15px;
+}
+
+pre {
+	margin: 10px;
+	padding: 12px;
+	background-color: #f7f7f7; 
+	line-height: 2;
+	border-radius: 10px;
+}
+
+#navbar {
+	border-right: 2px solid grey;
+	display: flex;
+	flex-direction: column;
+	order: 1;
+	flex: 1 1 280px;
+	position: fixed;
+	overflow-y: auto;
+	height: 100%;
+  width: auto;
+}
+
+h1 {
+	padding-left: 25px;
+}
+.nav-link {
+	text-decoration: none;
+	border-top: 1px solid grey;
+	padding: 9.5px 10px 9.5px 25px;
+	cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 760px) {
+	
+
+	#navbar {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	overflow-y: scroll;
+	border-bottom: 2px solid grey;
+  align-items: center;
+  
+	}
+	
+	#main-doc {
+	margin-left: 2px;
+	padding-top: 40rem;
+	width: 100%;
+	}
+
+	.nav-link {
+		padding-left: 33px;
+	}
+	
+	h1 {
+	text-align: center;
+	}
+
+	
+
+}
+
+
+@media screen and (max-width: 470px) {
+	
+	#main-doc {
+		padding-left: 6%;
+		padding-right: 6%; 
+	}
+
+	code {
+		font-size: 11px;
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 350px) {
+
+	pre#ifcode {
+		width: 250px;
+	}
+
+
+}
+
+
